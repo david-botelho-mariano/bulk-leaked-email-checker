@@ -18,28 +18,30 @@ def CheckEmail(email):
 
     try:
 
+        time.sleep(7)
+
         url = 'https://haveibeenpwned.com/api/v3/breachedaccount/' + email
         headers = {"hibp-api-key": HAVE_I_BEEN_PWNED_API_KEY}
         response = requests.get(url, headers=headers)              
+
+        if response.status_code == 404:            
+            return
 
         breachs = email + ","    
         for breach in response.json():
             breachs += breach['Name'] + " | "      
 
         SaveToFile("logs.csv", breachs)
-        time.sleep(7)
 
     except Exception as erro:                
         print(response.text)
         print(response.status_code)              
-        print("breachedaccount: " + str(erro))       
-        time.sleep(7)         
+        print("breachedaccount: " + str(erro))                
 
 if __name__ == "__main__":
 
     emails = LoadFile('emails.txt')
 
-    for email in emails:
+    for email in emails:        
         CheckEmail(email)
-
     
