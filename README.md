@@ -4,12 +4,12 @@ Essa ferramenta tem como objetivo utilizar a API do "https://haveibeenpwned.com/
 
 # Tutorial de uso:
 
-1) Crie um arquivo "emails.txt" que contenha uma lista de emails no seguite formato:
+1) Crie um arquivo chamado "emails.txt" que contenha uma lista de emails no seguite formato:
 
 teste1@gmail.com
 
 teste2@gmail.com
 
-2) `python bulk-leaked-email-checker.py`
+2) Em seguida execute o comando no terminal: `python bulk-leaked-email-checker.py`
 
 3) O resultado das consultas será salvo no arquivo "logs.csv".
