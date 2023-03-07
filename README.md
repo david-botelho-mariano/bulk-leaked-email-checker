@@ -7,6 +7,7 @@ Essa ferramenta tem como objetivo utilizar a API do "https://haveibeenpwned.com/
 1) Crie um arquivo chamado "emails.txt" que contenha uma lista de emails no seguite formato:
 
 teste1@gmail.com
+
 teste2@gmail.com
 
 2) Insira sua API key na variável ***HAVE_I_BEEN_PWNED_API_KEY*** presente no arquivo ***bulk-leaked-email-checker.py***
