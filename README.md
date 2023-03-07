@@ -15,3 +15,7 @@ teste2@gmail.com
 3) Em seguida execute o comando no terminal: `python bulk-leaked-email-checker.py`
 
 4) O resultado das consultas será salvo no arquivo "logs.csv".
+
+# Demonstração:
+
+![image](https://user-images.githubusercontent.com/48680041/223304773-f87c5946-c904-4b87-a67d-528cef0b0bb4.png)
